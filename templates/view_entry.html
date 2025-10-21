@@ -1,13 +1,13 @@
 {% extends "base.html" %} {% block title %}{{ entry.title }} - Fitness Logger{%
 endblock %} {% block content %}
 
-<a
+<!-- <a
   href="{{ url_for('history') }}"
   class="view-link"
   style="margin-bottom: 20px; display: inline-block"
 >
   ← Back to Logs
-</a>
+</a> -->
 
 <div class="entry-detail">
   <h2>{{ entry.title }}</h2>
@@ -37,7 +37,7 @@ endblock %} {% block content %}
     "
   >
     {% if entry.calories_burned %}
-    <p><strong>🔥 Calories Burned:</strong> {{ entry.calories_burned }} kcal</p>
+    <p><strong> Calories Burned:</strong> {{ entry.calories_burned }} kcal</p>
     {% endif %} {% if entry.calories_consumed %}
     <p>
       <strong>🍽️ Calories Consumed:</strong> {{ entry.calories_consumed }} kcal
