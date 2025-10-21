@@ -9,5 +9,5 @@ spec:
     - protocol: TCP
       port: 5000 # Service port (external access)
       targetPort: 5000 # Flask app port inside container
-      nodePort: 30085 # NodePort (range 30000-32767)
+      nodePort: 30082 # NodePort (range 30000-32767)
   type: NodePort
